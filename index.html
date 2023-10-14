@@ -16,6 +16,34 @@ Resources Used :
 ----->
 
 
+<!-----
+▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼
+NOTES : 
+- for the first 4 videos on the page (if they are vids), add "autoplay", as they won't be triggered by the js script until scrolling over them
+- remove autoplay from all other videos
+- linking gifs from tumblr will auto select to use the webp or gif versions as appropriate
+- but where possible, should try to use videos, as they will stop playing once off-screen and save the viewer's processing power
+
+- have a lazy-loading version somewhere but i didnt notice much of a difference
+
+
+▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲
+----->
+
+
+
+
+
+<!--TO DO 
+update gifs w videos
+cauldron_rig_x2_2000k.mp4
+peacock_final_x2_2000k.mp4
+shark_loop_x2_2000k.mp4
+
+
+-->
+
+
 
 
 
@@ -25,12 +53,11 @@ Resources Used :
 <html>
 <head>
 <title>charlie's animation portfolio</title>
-<!--<link rel="stylesheet" href="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/style-tech.css">-->
-<!--<link rel="stylesheet" href="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/style-1page.css">-->
+<!--<link rel="stylesheet" href="https://creatureframe.github.io/../assets/tech/style-tech.css">-->
+<!--<link rel="stylesheet" href="https://creatureframe.github.io/../assets/tech/style-1page.css">-->
 
-<link rel="stylesheet" href="https://3dart.charlierenwick.com/assets/style.css">
-<link rel="stylesheet" href="https://3dart.charlierenwick.com/assets/style-1page.css">
-
+<link rel="stylesheet" href="../assets/style.css">
+<!--<link rel="stylesheet" href="../assets/style-1page.css">-->
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
 
 
@@ -47,6 +74,7 @@ $("#loading").fadeOut("slow");
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"></script>
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <script>
 $(document).ready(function() {
 var $container = $(".content");
@@ -82,6 +110,7 @@ localStorage.setItem("daynight", "day")
 });
 });
 </script>
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <script>
 $(document).ready(function(){
 $('a[href*="t.umblr.com/redirect"]').each(function(){
@@ -91,7 +120,7 @@ $(this).attr("href", replaceURL);
 });
 });
 </script>
-
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <script>
 // Mikkel Jensen's solution I got from : https://stackoverflow.com/questions/15395920/play-html5-video-when-scrolled-to
 $(document).ready(function() {
@@ -115,36 +144,7 @@ $(this).get(0).pause();
 $(document).on('scroll', checkMedia);
 });
 </script>
-
-
-
-
-<!--  ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!--   UNITY WEBGL BUILDS TO DISPLAY   -->
-<!--    (default named : unityContainer ) -->
-
-<!-- <script src="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/unity/webgl/SlimeShader_demonstrate/Build/UnityLoader.js"></script>
-
-<script>
-  UnityLoader.instantiate("unityContainer_slime", "https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/unity/webgl/SlimeShader_demonstrate/Build/SlimeShader_demonstrate.json");
-</script> -->
-
-
-<!--    example of how to run in page  -->
-<!--    <div id="unityContainer_slime" style="width: 500px; height: 500px; margin: auto"></div>-->
-
-
-
-<!--    <script src="TemplateData/UnityProgress.js"></script>-->
-<!--    <script src="Build/UnityLoader.js"></script>-->
-<!-- //      var unityInstance = -->
-
-<!-- <script>
-UnityLoader.instantiate("unityContainer_timeofday", "https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/unity/webgl/AlpacaTimeOfDayShader_webGL/Build/AlpacaTimeOfDayShader_webGL.json");
-</script> -->
-
-<!-- //                            , {onProgress: UnityProgress}); -->
-<!--  ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
 
 </head><body>
 
@@ -152,7 +152,7 @@ UnityLoader.instantiate("unityContainer_timeofday", "https://creatureframe.githu
     
 
 
-
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
 <!-- PAGE HEADER -->
 <div class="header">
 <a class="menu-btn" title="back to folio" href="https://3dart.charlierenwick.com/"><span class="bx bx-menu"></span></a>
@@ -169,19 +169,17 @@ UnityLoader.instantiate("unityContainer_timeofday", "https://creatureframe.githu
 <div style="margin:-150px 0px 0px 0px;"></div>
 <div class='part'>
 <div class="caption" align="center">
-
-
-
-
 <div style="height:10px;margin:0px;"></div>
-
 <!-- START OF FOLIO SECTIONS WITHIN BODY -->
-<!-- <br><br><br><br> -->
 <div class="minifolio-textboxes">
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
 
 
-
-
+    
+    
+    
+    
+    
 
 <!-- title block -->
 <!--
@@ -195,91 +193,15 @@ animation
 
 
 
-
-
-
-
-
-
-<!-- https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/techart_shadersinteract.html -->
-
-
-
-
-
-<!--
-
-TO DO
-
-- tidy spacing thru page
--
-
- -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- <!-- <div style="height:120px;margin:0px;margin-bottom:0px;"></div>
- <div align="center">
- <div class="footernav-single" style="width:380px;max-width:80%;margin-left:-40px;">
- <a href="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/techart_shadersinteract.html">
- <div class="footernav-button" >
- <div class="nextbutton-text" style="font-weight:800;">
- play with these shaders in-browser here!
- </div>
- </div></a>
- </div>
- </div> -->
-
-
-
-
-<!-- <img src="https://64.media.tumblr.com/bfb0c51aa4dcac79d904c33ea70d373b/5ceb7fa8fa97c794-ae/s540x810/01d57d0ad6af1606f492206a985f33d179ee3fdd.gifv" class="gifloops fx-thinbord"> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
-<!-- end <div class="minifolio-altbg"> for section-block -->
-
-
-
-<!-- fx-photoborder -->
-<!-- fx-thinbord -->
-
-
-
-<!--    webgl-redir-->
-<!-- spacer -->
-<!-- <div style="height:0px;margin:0px;margin-bottom:-7px;"></div>
-<div class="sidebyside-textbox textbox-border note-small" style="margin:-5% 4% 0px 10%;">
-Loading interactive scene. To see this shader demonstrated in a video instead,
-<a class="urly" href="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/techart_shadersinteract.html">click here!</a>
-</div> -->
-
-
-
-
-
 <!-- spacer -->
 <div style="height:50px;margin:0px;"></div>
 
 
 
-
-
-<!--ANCHORS-->
-<!--    <div style="margin:-90px 0px 90px 0px;" id="peacock"></div>-->
-
-<!--     style="margin-left:10px;margin-right:0px;"-->
+    
+    
+    
+    
     
     
 <!-- - - - - - - - - - -->
@@ -291,9 +213,17 @@ Loading interactive scene. To see this shader demonstrated in a video instead,
     A personal project that began as an experiment in how a peacock's tail could be rigged, before being visually developed into a complete illustrative scene.
 </p></div> -->
 </div>
+<!-- video version -->
+<!--
+<div class="sidebyside-image">
+<video autoplay muted loop playsinline webkit-playsinline class="gifloops" style="border:1px solid white;" width="540">
+    <source src="../assets/images/peacock_final_x2_2000k.mp4" type="video/mp4"/>
+</video>
+</div>
+-->
+<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
 
-
-
+    
 
     
     
@@ -303,11 +233,14 @@ Loading interactive scene. To see this shader demonstrated in a video instead,
 <!-- river dragon pounce -->
 <div class="sidebyside-image">
 <video autoplay muted loop playsinline webkit-playsinline class="gifloops" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/dragonpounce_gifski_x2_1500k.mp4" type="video/mp4"/>
+    <source src="../assets/images/dragonpounce_gifski_x2_1500k.mp4" type="video/mp4"/>
 </video>
+    <!--  WHITE BORDER FOR FRAMING IMAGE BOTTOM  -->
+    <div style="background:#fff;width:100%;height: 30px;margin-top: -40px;z-index: 10;position: relative; display:block;"></div>
+    <!--    border:1px solid red;   -->
 </div>
 <!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
-<!--    https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/images/dragonpounce_gifski_t1_x2_1500k_HALD_match_bettaDark_01.mp4-->
+<!--    https://creatureframe.github.io/../assets/tech/images/dragonpounce_gifski_t1_x2_1500k_HALD_match_bettaDark_01.mp4-->
     
     
 
@@ -320,7 +253,7 @@ Loading interactive scene. To see this shader demonstrated in a video instead,
 <!-- cat final -->
 <div class="sidebyside-image">
 <video autoplay muted loop playsinline webkit-playsinline class="gifloops" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/cat_catfinal_x2_1500k.mp4" type="video/mp4"/>
+    <source src="../assets/images/cat_catfinal_x2_1500k.mp4" type="video/mp4"/>
 </video>
 </div>
     
@@ -339,7 +272,7 @@ Loading interactive scene. To see this shader demonstrated in a video instead,
 -->
 <div class="sidebyside-image">
 <video autoplay muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/whale_final_x2_2000k.mp4" type="video/mp4"/>
+    <source src="../assets/images/whale_final_x2_2000k.mp4" type="video/mp4"/>
 </video>
 </div>
 <!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
@@ -362,14 +295,39 @@ Loading interactive scene. To see this shader demonstrated in a video instead,
 <!--  style="margin:10px;"-->
     
     
+<!--
 <div class="sidebyside-image">
 <div class="gifloops fx-photoborder" style="padding:15px; margin:0px;">
 <img src="https://64.media.tumblr.com/97dd9a409e94cebe61bf1eb0a29a9df7/tumblr_inline_p64f0rYlDO1smn18a_540.gifv" style="border:1px solid #eee; margin:0px 0px -5px 0px;">
 </div>
 </div>
-    
+-->
     
 
+<!-- - - - - - - - - - -->
+<!-- cauldron rig -->
+    <!--  image used to have   class="gifloops fx-imgpop"-->
+<!--
+<div class="sidebyside-image" style="">
+<div class="gifloops fx-photoborder" style="padding:15px 15px 10px 15px; margin:0px;">
+<img src="https://64.media.tumblr.com/fee4d8efb3fa0f653ab06bba6e9b18e1/tumblr_inline_p64f5xXGbP1smn18a_540.gifv" class="fx-thinbord">
+</div>
+</div>
+-->
+<!-- cauldron rig VIDEO VERSION -->
+<div class="sidebyside-image">
+<div class="gifloops fx-photoborder" style="padding:15px 15px 10px 15px; margin:0px;">
+<video muted loop playsinline webkit-playsinline class="gifloops" width="505">
+<source src="../assets/images/cauldron_rig_x2_2000k.mp4" type="video/mp4"/>
+</video>
+</div>
+</div>
+    
+
+    
+    
+    
+    
     
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <!-- - - - - - - - - - -->
@@ -380,7 +338,7 @@ Loading interactive scene. To see this shader demonstrated in a video instead,
 <div class="sidebyside-image">
 <div class="gifloops fx-blankpadding" style="padding:18px; margin:0px;">
 <video muted loop playsinline webkit-playsinline class="gifloops" width="500">
-<source src="https://3dart.charlierenwick.com/assets/images/toucan_fly_x2_1500k.mp4" type="video/mp4"/>
+<source src="../assets/images/toucan_fly_x2_1500k.mp4" type="video/mp4"/>
 </video>
 </div>
 </div>
@@ -462,7 +420,7 @@ https://charlierenwick.com/anim_misc
 <!-- betta dark -->
 <div class="sidebyside-image">
 <video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/betta_dark_x2_1500k_compat.mp4" type="video/mp4"/>
+    <source src="../assets/images/betta_dark_x2_1500k_compat.mp4" type="video/mp4"/>
 </video>
 </div>
     
@@ -471,7 +429,7 @@ https://charlierenwick.com/anim_misc
 <!-- betta dusk -->
 <div class="sidebyside-image">
 <video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/betta_duskBetta_x2.mp4" type="video/mp4"/>
+    <source src="../assets/images/betta_duskBetta_x2.mp4" type="video/mp4"/>
 </video>
 </div>
     
@@ -479,7 +437,7 @@ https://charlierenwick.com/anim_misc
 <!-- betta day -->
 <div class="sidebyside-image">
 <video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/betta_day_x2.mp4" type="video/mp4"/>
+    <source src="../assets/images/betta_day_x2.mp4" type="video/mp4"/>
 </video>
 </div>
 
@@ -488,7 +446,7 @@ https://charlierenwick.com/anim_misc
 <!-- betta dawn -->
 <div class="sidebyside-image">
 <video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/betta_dawn_x2.mp4" type="video/mp4"/>
+    <source src="../assets/images/betta_dawn_x2.mp4" type="video/mp4"/>
 </video>
 </div>
     
@@ -498,22 +456,16 @@ https://charlierenwick.com/anim_misc
 
     
 <!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
-</div>      <!--    END SECTION      -->
+</div>      <!-- END BETTAS SECTION -->
 <!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
 
 
-
-
-
     
     
-
-
+    
 <!-- spacer -->
 <div style="height:20px;margin:0px;margin-bottom:0px;"></div>
-<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
-<!-- END BETTAS SECTION -->
-<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
 
 
 
@@ -534,272 +486,332 @@ https://charlierenwick.com/anim_misc
 <!--    PIGEON PANIC ANIM IDLE      -->
 <!-- - - - - - - - - - - - - - - - - - - -->
 <div class="sidebyside-image">
-<video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/pigeon_idle_x2_500k.mp4" type="video/mp4"/>
+<video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="500">
+    <source src="../assets/images/pigeon_idle_x2_500k.mp4" type="video/mp4"/>
 </video>
-<!--
 </div>
-<div class="sidebyside-image">
-<img src="https://64.media.tumblr.com/526bc6deec48f4b055f2716df001c9ba/tumblr_inline_ow0wbvwd411smn18a_500.gif" class="gifloops fx-imgpop">
-<br><br>
--->
-<!-- spacer -->
-<div style="height:0px;margin:0px;margin-bottom:0px;margin-top:-30px;"></div>
-<p>
-    Modelled, textured, rigged and animated pigeon characters for <i>Pigeon Panic</i>, an AR mobile game made in Unity. 
-    <i>(Concept art provided by client.)</i>
-</p>
-</div>
-    
-<!--  ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!--    WAYWARD PROPS MODELLED      -->
+<!-- - - - - - - - - - - - - - - - - - - -->
+<!-- BBC NEWS CLIP -->
 <!-- - - - - - - - - - - - - - - - - - - -->
 <div class="sidebyside-image">
-<table><tbody><tr><td width="50%"><img src="https://64.media.tumblr.com/a3252ea288efc237fcd27b502b74d60c/8ed3a094cc57053e-5a/s400x600/6d1de0f7247350f8d42d36c44d59375993eefbdc.gif"></td><td width="50%"><img src="https://64.media.tumblr.com/bee093c632ec7ef7d4ba1402b8f68936/8ed3a094cc57053e-e3/s400x600/9b979265ec70a2f5f9a545cc575269472f6bb1eb.gif"></td></tr><tr><td width="50%"><img src="https://64.media.tumblr.com/f2f24299529695c906e61f7f70b8aac3/8ed3a094cc57053e-83/s400x600/f687d16ba68ae2ced55d01987aa2bbb514e78bb8.gif"></td><td width="50%"><img src="https://64.media.tumblr.com/05a4728c26032cab65aec5854b1bad0a/8ed3a094cc57053e-0a/s400x600/958e240e2638a6f8e14b86529571577c9335f1a5.gif"></td></tr></tbody></table>
-<!-- spacer -->
-<div style="height:0px;margin:0px;margin-bottom:0px;margin-top:-22px;"></div>
-<p>
-    3D models for <em>Wayward Strand</em>, from concept art by <a href="https://marigoldbartlett.tumblr.com/">Marigold Bartlett.</a>
-</p>
+<!--    
+replacing "muted" with "controls", so that audio can be turned on, oh wait theres no audio lol
+
+audio ver is 8.1mb
+BBCinterviewJamie_p05fwg9z.mp4
+muted ver is 1.7MB
+comboldn-907573812824346624-20170912_215713-vid1.mp4
+-->
+<video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
+    <source src="assets/images/comboldn-907573812824346624-20170912_215713-vid1.mp4" type="video/mp4"/>
+</video>
+    
+<div class="sidebyside-textbox textbox-border" style="content-align: center;align:center;margin:-25px 20px 0px 20px;">
+<br>
+    For the sake of efficiency, the pigeons were set up to account for being able to share animations between them.
+<br><br>
+    The animations were further manually tweaked where needed to suit their various body shapes and personalities.
+<br><br>
 </div>
-<!--    END WAYWARD PROP RIG      -->
-<!--  ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
+    
+</div>
 
     
     
+<!--
+<p>Yesterday, <a href="https://twitter.com/BBCNews?ref_src=twsrc%5Etfw">@BBCNews</a> filmed us running around our office after <a href="https://twitter.com/hashtag/ARKit?src=hash&amp;ref_src=twsrc%5Etfw">#ARKit</a> Pigeons. The future is now. &#129305; <a href="https://t.co/WjTornhiIS">pic.twitter.com/WjTornhiIS</a></p>
+&mdash; Combo (@comboldn) <a href="https://twitter.com/comboldn/status/907573812824346624?ref_src=twsrc%5Etfw">September 12, 2017</a>
+    
+    
+-->
+    
+<!-- - - - - - - - - - - - - - - - - - - -->
+    
+
+    
+    
+    
+    
+
+
+    
+    
+    
+<!-- DISPLAYING AT FULL SIZE -->
+<!--  ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
+<!--    PIGEON PANIC ANIMSx3      -->
+<!-- - - - - - - - - - - - - - - - - - - -->
+<!--
+<div class="sidebyside-image" style="margin-bottom:-90px;">
+<video muted loop playsinline webkit-playsinline class="gifloops" width="540">
+    <source src="assets/images/pigs_walk_x2_2000k.mp4" type="video/mp4"/>
+</video>
+</div>
+<div class="sidebyside-image" style="margin-top:-20px;">
+<video muted loop playsinline webkit-playsinline class="gifloops" width="540">
+    <source src="assets/images/pigs_scare_x2_1500k.mp4" type="video/mp4"/>
+</video>
+</div> 
+-->
+
 <!-- spacer -->
-<div style="height:30px;margin:0px;margin-bottom:0px;"></div>
+<!--<div style="height:0px;margin:0px;margin-bottom:0px;margin-top:-20px;"></div>-->
+ 
+<!--
+<div class="sidebyside-image" style="margin-bottom:-90px;">
+<video muted loop playsinline webkit-playsinline class="gifloops" width="540">
+    <source src="assets/images/pigs_fly_x2_2000k.mp4" type="video/mp4"/>
+</video>
+</div> 
+<div class="sidebyside-image">
+<video muted loop playsinline webkit-playsinline class="gifloops" width="540">
+    <source src="assets/images/pigs_idle_x2_1000k.mp4" type="video/mp4"/>
+</video>
+</div> 
+-->
+<!-- - - - - - - - - - - - - - - - - - - -->
+    
+    
+    
+    
+    
+    
+<!-- DISPLAYING 4-WAY FLEXBOX -->
+<!--  ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
+<!--    PIGEON PANIC ANIMSx3      -->
+<!-- - - - - - - - - - - - - - - - - - - -->
+    
+<!--
+<style>
+.pigeons-flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  align-items: normal;
+  align-content: normal;
+    background: #fff;
+}
+
+.pigeons-flex-items {
+  display: block;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  align-self: auto;
+}
+.flex-items:nth-child(1) {
+  order: 0;
+}
+.flex-items:nth-child(2) {
+  order: 1;
+}
+.flex-items:nth-child(3) {
+  order: 2;
+}
+.flex-items:nth-child(4) {
+  order: 3;
+}
+</style>
+-->
+    
+    
+<div class="pigeons-flex-container">
+<div class="pigeons-flex-items">
+    
+<video muted loop playsinline webkit-playsinline class="gifloops" width="25%" style="margin:-5px;">
+<source src="assets/images/pigs_walk_x2_2000k.mp4" type="video/mp4"/>
+</video>
+<video muted loop playsinline webkit-playsinline class="gifloops" width="25%" style="margin:-5px;">
+<source src="assets/images/pigs_scare_x2_1500k.mp4" type="video/mp4"/>
+</video>
+<video muted loop playsinline webkit-playsinline class="gifloops" width="25%" style="margin:-5px;">
+<source src="assets/images/pigs_fly_x2_2000k.mp4" type="video/mp4"/>
+</video>
+<video muted loop playsinline webkit-playsinline class="gifloops" width="25%" style="margin:-5px;">
+<source src="assets/images/pigs_idle_x2_1000k.mp4" type="video/mp4"/>
+</video>
+       
+</div>
+</div>
+
+    
+
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
 
 
 
 
+    
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <div class="minifolio-altbg">
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-    
- 
+<!-- - - - - - - - - - -->
+<!--<br><Br>-->
+<!-- spacer -->
+<div style="height:0px;margin:0px;margin-bottom:30px;"></div>
 
-
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- gelato cart -->
-<!--
-<div class="sidebyside-image">
-<img src="https://64.media.tumblr.com/1fb2460f4143446e11ea056e909a986e/1c71616675c68a20-77/s540x810/4209340034493d111c0fdd7a78bf838f0a970540.gifv">
-</div>
--->
-<div class="sidebyside-image">
-<video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/gelatocart_x2_2000k.mp4" type="video/mp4"/>
-</video>
-</div>
-
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- jellyfish rig controls -->
-<div class="sidebyside-image fx-blankpadding">
-<img src="https://64.media.tumblr.com/6f21b01ec4994e7aff06a47ee3f41de0/tumblr_inline_p7cylwjSYg1smn18a_540.gifv" class="gifloops">
-</div>
-
-    
-    
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- alpaca mesh B&W turnaround -->
-<!--
-<div class="sidebyside-image fx-blankpadding">
-<img src="https://64.media.tumblr.com/3d6f23228d0b671df9ae3efb04d80bfd/tumblr_inline_ol8s1vxg3N1smn18a_500.gifv">
-</div>
--->
-    
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- alpaca posed model turnaround -->
-<!--
-<div class="sidebyside-image fx-blankpadding" style="padding:18px; margin:0px;">
-<img src="https://64.media.tumblr.com/46fa42afde6e8a077b026a929e39b7a1/54887cd8627ce25b-b0/s500x750/f6eaa0e11bd10f92fb4a7bec84f8f433befb18e4.gifv">
-</div>
--->
-    
     
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <!-- alpaca mopping -->
-<!--
-<div class="sidebyside-image fx-blankpadding">
-<img src="https://64.media.tumblr.com/720fedeaebc0f305fde8b0bbd2038426/tumblr_inline_ore8v8jpLc1smn18a_500.gifv">
-</div>
-    
--->
-    
-
-<!--    <div class="sidebyside-image fx-blankpadding fx-photoborder" style="padding:18px; margin:0px;">-->
-    
-<!--<div class="sidebyside-image fx-blankpadding" style="padding:20px; margin:0px;border:1px solid #fff;">-->
-    
-    
-    
-<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
-<!--end alt-bg section-->
-    </div>
-<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
-
-
-
-
-
-    
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- alpaca mopping -->
-<div class="sidebyside-image">
+<div class="sidebyside-image" style="margin:0px 0px 25px 0px;">
 <video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/alpaca_mopping_x2_1000k.mp4" type="video/mp4"/>
+    <source src="../assets/images/alpaca_mopping_x2_1000k.mp4" type="video/mp4"/>
 </video>
+</div>
 <!--
 </div>
 <div class="sidebyside-image">
     <img src="https://64.media.tumblr.com/720fedeaebc0f305fde8b0bbd2038426/tumblr_inline_ore8v8jpLc1smn18a_500.gif" style="border:1px solid white;" class="gifloops fx-imgpop">
 -->
+
+    
+    
+    
+    
+<!-- ALPACA MODEL EMBED -->
+<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
+<!--
+<style>
+.modelviewer{
+    width:100%;
+    max-width:520px;
+    height:550px;
+    border:1px solid #fff;
+    background:#ffc800;
+    margin:-50px 0px 0px 0px;
+    background: fixed url("assets/modelview/bg/bgpattern_dusky_ver5 fade3.png") bottom center;
+    background-position: bottom 100% right 50%;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+}
+</style>
+-->
+    
+    
+<div class="sidebyside-image fx-blankpadding" >
+<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
+<!-- alpaca anims 3d embed -->
+
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
+<script type="module" src="assets/modelview/model-viewer.min.js"></script>
+
+<model-viewer 
+oncontextmenu="return false;" 
+autoplay id="mainModel" 
+environment-image="assets/modelview/blankwhite.png" 
+class="modelviewer" 
+src="assets/modelview/Alpaca_animsForFBXmodelviewer.glb" 
+alt="title here" 
+camera-controls="true" 
+shadow-intensity="1" 
+interaction-prompt="auto" 
+loading="eager" 
+enable-pan="true" 
+data-js-focus-visible="" 
+ar-status="not-presenting" 
+animation-name="undefined" 
+camera-target="0m 0.0105m -0.0005m" 
+field-of-view="90deg" 
+max-field-of-view="20deg" 
+camera-orbit="25deg 75deg 10m" 
+>
+</model-viewer> 
+<!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
+
+    
+<div style="margin-bottom:-40px;margin:-30px -20px -20px 10px;max-width:540px;width:100%;">
+<p>
+<!--<i>you can click and drag to orbit around the model!</i>-->
+<i>you can click and drag to orbit around the model! please refresh the page if the animation isn't playing</i>
+</p>
+</div>
+</div>
+<!--end "sidebyside-image fx-blankpadding" -->
+
+</div>
+<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
+<!--end alt-bg-->
+    
+    
+    
+    
+    
+    
+    
+   
+
 <!-- spacer -->
-<!--
-<div style="height:0px;margin:0px;margin-bottom:0px;margin-top:-40px;"></div>
-    <br><p>
-        Low poly playable character for Unity. Created using Maya, ZBrush and Photoshop.<br>
-        2876 tris, 1552 verts
-    </p>
--->
-</div>
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- alpaca mesh B&W turnaround -->
-<div class="sidebyside-image fx-blankpadding">
-    <img src="https://64.media.tumblr.com/3d6f23228d0b671df9ae3efb04d80bfd/tumblr_inline_ol8s1vxg3N1smn18a_500.gif" class="gifloops">
-</div>
+<div style="width:10px;margin:0px;margin-bottom:-40px;"></div>
 
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- alpaca face rig -->
-<!--
-<div class="sidebyside-image fx-photoborder" style="padding:15px; margin:3px;">
-<img src="https://64.media.tumblr.com/f9970d4ce1efad694264821beab1b443/54887cd8627ce25b-d8/s500x750/b956d9c964b75e218aee185da25f6a5196a20a7b.gifv" style="border:1px solid #eee; margin:0px 0px -5px 0px;background: fixed url(https://3dart.charlierenwick.com/assets/deco/bg03.png) bottom center;">
-</div>
--->
-    
-    
-    
-    
-    
- 
+
 
     
     
     
-    
-    
-    
-
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- pigeons BBCnews tweet -->
-<!--
-<div class="centertweet">
-<blockquote class="twitter-tweet">
-        <p>Yesterday, <a href="https://twitter.com/BBCNews?ref_src=twsrc%5Etfw">@BBCNews</a> filmed us running around our office after <a href="https://twitter.com/hashtag/ARKit?src=hash&amp;ref_src=twsrc%5Etfw">#ARKit</a> Pigeons. The future is now. &#129305; <a href="https://t.co/WjTornhiIS">pic.twitter.com/WjTornhiIS</a></p>
-        &mdash; Combo (@comboldn) <a href="https://twitter.com/comboldn/status/907573812824346624?ref_src=twsrc%5Etfw">September 12, 2017</a>
-</blockquote>
-<script charset="utf-8" src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
-</div>
--->
-
-
-        
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!--breakfast props-->
-<!--
-<div class="sidebyside-image">
-<video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-<source src="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/images/breakfast_20fps_x2_1500k.mp4" type="video/mp4"/>
-</video>
-</div>
--->
-    
-    
-    
-    
-    
-<br><br>
-    
-    
-    
-
-    
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- shark loop -->
-<div class="sidebyside-image fx-blankpadding" style="padding:10px;margin-top:40px;">
-<img src="https://64.media.tumblr.com/0512045204b6c6713ab98d24e6246a16/5ceb7fa8fa97c794-60/s500x750/1cd2d6ca1f24c783a181e44f9e68811d0924f7b3.gif" class="gifloops" style="margin-top:-50px;margin-bottom: -50px;">
-<!--
-    <p>
-        Modelled, UVed, textured, rigged, animated and shader in Blender, with additional texturing done in 3D-Coat.
-    </p>
--->
-</div>
-    
-    
-    
-    
-    
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- shark texture map -->
-<!--
-<div class="sidebyside-image">
-    <img src="https://64.media.tumblr.com/6cc2dd6ea7411a5895e89fb456864c97/5ceb7fa8fa97c794-16/s540x810/0fa0272fec92e61e1c3ead68438f59a9c7927449.gif" class="gifloops fx-thinbord">
-</div>
--->
-<div class="sidebyside-image">
-<video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/shark_txrMap_x2_2000k.mp4" type="video/mp4"/>
-</video>
-</div>
-
-    
-
-
-    
-    
-
     
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <!-- GAW enemy -->
 <div class="sidebyside-image" style="margin-top:-45px;" >
-<!--<img src="https://3dart.charlierenwick.com/assets/images/gaw2_enemyblack.gif" class="gifloops" style="margin-top:-50px;margin-bottom: -50px;">-->
-<img src="https://3dart.charlierenwick.com/assets/images/gaw2_enemyblack.gif">
+<!--<img src="../assets/images/gaw2_enemyblack.gif" class="gifloops" style="margin-top:-50px;margin-bottom: -50px;">-->
+<img src="../assets/images/gaw2_enemyblack.gif">
 </div>
+    
+    
+    
+    
+<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
+<!-- shark loop -->
+<!--
+<div class="sidebyside-image fx-blankpadding" style="padding:10px;margin-top:40px;">
+<img src="https://64.media.tumblr.com/0512045204b6c6713ab98d24e6246a16/5ceb7fa8fa97c794-60/s500x750/1cd2d6ca1f24c783a181e44f9e68811d0924f7b3.gif" class="gifloops" style="margin-top:-50px;margin-bottom: -50px;">
+</div>
+-->
+<!-- - - - - - - - - - -->
+<!-- video version -->
+<div class="sidebyside-image fx-blankpadding">
+<video muted loop playsinline webkit-playsinline class="gifloops" width="500" style="margin-bottom: -50px;">
+    <source src="../assets/images/shark_loop_x2_2000k.mp4" type="video/mp4"/>
+</video></div>
+<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
+
+    
+    
+    
+<!-- spacer -->
+<div style="width:10px;margin:0px;margin-bottom:-50px;"></div>
+
+    
+    
+
+    
+<!-- - - - - - - - - - -->
+<!-- jellyfish rig controls -->
+<div class="sidebyside-image" style="">
+<img src="https://64.media.tumblr.com/6f21b01ec4994e7aff06a47ee3f41de0/tumblr_inline_p7cylwjSYg1smn18a_540.gifv" class="gifloops">
+</div>
+<!-- - - - - - - - - - -->
+    
+
+
     
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <!-- GAW coral -->
 <div class="sidebyside-image fx-blankpadding" style="padding:15px;margin-top:-25px;">
-<img src="https://3dart.charlierenwick.com/assets/images/gaw2_coralemerge_pause.gif">
+<img src="../assets/images/gaw2_coralemerge_pause.gif">
 </div>
-<!--
-<div class="sidebyside-image fx-blankpadding" style="padding:10px;">
-<img src="https://3dart.charlierenwick.com/assets/images/gaw2_coralemerge_pause.gif" class="gifloops" style="margin-top:-50px;margin-bottom: -50px;">
-</div>
--->
-<!--
-<div class="sidebyside-image fx-photoborder" style="padding:15px; margin:13px;">
-<img src="https://3dart.charlierenwick.com/assets/images/gaw2_coralemerge_pause.gif" style="border:1px solid #eee; margin:0px 0px -5px 0px;background: fixed url(https://3dart.charlierenwick.com/assets/deco/bg04.png) bottom center;">
-</div>
--->
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+
     
     
 <!-- HR line for index page at bottom TOP -->
@@ -825,6 +837,8 @@ https://charlierenwick.com/anim_misc
 <!-- / / / / / / / / / / / / / / / / / / /  -->
 <!-- / / / / / / / / / / / / / / / / / / /  -->
     
+<!-- spacer -->
+<div style="width:10px;margin:0px;margin-bottom:-50px;"></div>
 
 
 <!-- . . . . . . . . . . . . . . . . . . . . . . . . . -->
@@ -846,37 +860,34 @@ rigging
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <div class="minifolio-altbg">
 <div class="sidebyside-image">
-<img src="https://64.media.tumblr.com/34279ee198683ebed50a66c16f1cb634/ac448244c7aa4629-f8/s540x810/4e84d6de8fcc0c2df41b269364a7e3451e76891c.gifv" class="gifloops fx-thinbord">
-<div style="margin-bottom:-40px;">
+
+<!--raindrop wip larger-->
+<img src="https://64.media.tumblr.com/bfb0c51aa4dcac79d904c33ea70d373b/5ceb7fa8fa97c794-ae/s540x810/01d57d0ad6af1606f492206a985f33d179ee3fdd.gifv" class="gifloops fx-thinbord" style="height:auto;" width="540" height="179">
+
+<div style="margin-bottom:-40px;margin-top:-20px;">
     <p>
         Experimenting with ways a raindrop could be stylistically animated, this rig was built to be as flexible as possible.
     </p>
 </div>
-    
+
 <!--fish swimming under surface-->
 <!--<img src="https://64.media.tumblr.com/ed9cee8d6625e31d8add08420127ba4f/ac448244c7aa4629-16/s540x810/c40cd9ad64c9a93a277279c055a3de5a8d45067f.gifv" class="gifloops fx-thinbord">-->
-<video autoplay muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-    <source src="https://3dart.charlierenwick.com/assets/images/cat_fishunder_x2_500k.mp4" type="video/mp4"/>
-</video>
+<div style="margin:26px 0px 0px 0px;z-index:-5;">
+    <video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
+    <source src="../assets/images/cat_fishunder_x2_500k.mp4" type="video/mp4"/>
+</video></div>
+
+</div>
+<!-- end <div class="sidebyside-image">   -->
     
-</div>
+<!--raindrop rig angles-->
 <div class="sidebyside-image">
-<video autoplay muted loop playsinline webkit-playsinline class="gifloops" style="border:4px solid #fff;margin:20px 0px 10px -4px;" width="540">
-<!--    <source src="https://3dart.charlierenwick.com/assets/images/cat_catfinal_x2_1500k_HALD_match_bettaDark_01.mp4" type="video/mp4"/>-->
-<source src="https://3dart.charlierenwick.com/assets/images/cat_catfinal_x2_1500k.mp4" type="video/mp4"/>
-</video>
-<div style="margin-bottom:-40px;">
-    <p>
-        While too overcomplex for a dedicated animator to work with, it allowed me to experiment with options and develop the final look.
-        <br><br>
-        Made using Maya and Photoshop.
-    </p>
-</div>
-<img src="https://64.media.tumblr.com/bfb0c51aa4dcac79d904c33ea70d373b/5ceb7fa8fa97c794-ae/s540x810/01d57d0ad6af1606f492206a985f33d179ee3fdd.gifv" class="gifloops fx-thinbord">
+<img src="https://64.media.tumblr.com/34279ee198683ebed50a66c16f1cb634/ac448244c7aa4629-f8/s540x810/4e84d6de8fcc0c2df41b269364a7e3451e76891c.gifv" class="gifloops fx-thinbord" style="height:auto;image-rendering:auto;" width="540" height="540">
 </div>
 </div>
-<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
 <!-- end <div class="minifolio-altbg"> for section-block -->
+<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
+
 
 
 
@@ -886,128 +897,46 @@ rigging
 
 
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!-- <div class="minifolio-altbg"> -->
-<!-- - - - - - - - - - -->
-<!-- alpaca face rig -->
-<div class="sidebyside-image">
-<div class="gifloops fx-photoborder" style="padding:15px; margin:3px;">
-<img src="https://64.media.tumblr.com/f9970d4ce1efad694264821beab1b443/54887cd8627ce25b-d8/s500x750/b956d9c964b75e218aee185da25f6a5196a20a7b.gifv" style="border:1px solid #eee; margin:0px 0px -5px 0px;background: fixed url(https://3dart.charlierenwick.com/assets/deco/bg03.jpg) bottom center;">
-</div>
-<!--assets/tech/images/bg03.png-->
 
-<!-- assets/tech/images/bg_paper02.jpg -->
-<!-- assets/tech/images/C61A6952-Pano-Edit_GreenPatch_partLeft_heavyBlur.jpg -->
-
-</div>
-<!-- photoborder fx-thinbord -->
-<!-- class="gifloops fx-photoborder" -->
-<!-- border:1px solid #ccc; margin:20px; -->
 
 <!-- - - - - - - - - - -->
 <!-- image whale boombox rig -->
 <div class="sidebyside-image">
-<img src="https://64.media.tumblr.com/332392f75fb019afae94997f4fa4b23f/fd581f7f3b19e1d3-2d/s540x810/6c081bc42b1c64e6087d88fd352f1f941591d6c5.gifv" class="gifloops fx-thinbord">
+<img src="https://64.media.tumblr.com/332392f75fb019afae94997f4fa4b23f/fd581f7f3b19e1d3-2d/s540x810/6c081bc42b1c64e6087d88fd352f1f941591d6c5.gifv" class="gifloops fx-thinbord" style="height:auto;" width="540" height="540">
 </div>
-<!-- - - - - - - - - - -->
-<!-- image whale final scene -->
-<!-- <div class="sidebyside-image">
-<img src="https://64.media.tumblr.com/ae07a5102020bd250f50b2950413cc3f/08df2ab86c6f6064-f5/s540x810/d5a7b5c2d8e6f2ac522d168d882c9e261f303c00.gifv" class="gifloops fx-thinbord">
-</div> -->
-<!-- - - - - - - - - - -->
-<!-- </div> -->
-<br><br>
-<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
 
 
-
-
-
-
-
-<!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<div class="minifolio-altbg">
-<!-- - - - - - - - - - -->
-<div class="sidebyside-image" style="">
-<!-- - - - - - - - - - -->
-<!-- cauldron rig -->
-<img src="https://64.media.tumblr.com/fee4d8efb3fa0f653ab06bba6e9b18e1/tumblr_inline_p64f5xXGbP1smn18a_540.gifv" class="fx-thinbord"  class="gifloops fx-imgpop">
-</div>
-<!-- - - - - - - - - - -->
-<!-- jellyfish rig controls -->
-<div class="sidebyside-image" style="">
-<img src="https://64.media.tumblr.com/6f21b01ec4994e7aff06a47ee3f41de0/tumblr_inline_p7cylwjSYg1smn18a_540.gifv" class="gifloops">
-</div>
-<!-- - - - - - - - - - -->
-</div>
-<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
-
-
-
-
-
-
-
-
-    
-    
-<!--  ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
-<!--
-<hr class="hr-goldblock">
-<div class="mid-title">
-    peacock tail
-</div><br>
--->
-<!--    PEACOCK TAIL      -->
 <!-- - - - - - - - - - - - - - - - - - - -->
-    
-<!-- - - - - - - - - - - - - - - - - - - -->
-<div class="sidebyside-image">
-    <div style="margin:-90px 0px 90px 0px;" id="peacock"></div>
-<img src="https://64.media.tumblr.com/08199839eb238aed40faf344e8df3b1b/da57775d3f5f4660-91/s540x810/363d13a5647ab866942a14fb1e2a0927781cabd7.gifv" style="border:1px solid white;">
-</div>
-<!-- - - - - - - - - - - - - - - - - - - -->
-
-
-    
-<!--PEACOCK WIREFRAME SIDE-->
-<!-- - - - - - - - - - - - - - - - - - - -->
-<!--
-<div class="sidebyside-image">   
-<img src="https://64.media.tumblr.com/57ea3f5642052f1684626f5e32e1fbcb/df66d92386390ff3-75/s540x810/6672032aec7a71672ae2f27f5eea2dfb8797d113.gifv" class="fx-thinbord">
-</div>
--->
-<!-- - - - - - - - - - - - - - - - - - - -->
-    <!-- - - - - - - - - - - - - - - - - - - -->
 <div class="sidebyside-image">
 <video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-<source src="https://3dart.charlierenwick.com/assets/images/peacock_wireframed_x2_1500k.mp4" type="video/mp4"/>
+<source src="../assets/images/peacock_tail_rig.mp4" type="video/mp4"/>
 </video>
 </div>
-    <!-- - - - - - - - - - - - - - - - - - - -->
-    
-    
-    
-
-<!-- - - - - - - - - - -->  
-<br>
-<!-- - - - - - - - - - -->  
-
-
+<!-- - - - - - - - - - - - - - - - - - - -->
+<!-- ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
 
     
-    <!-- - - - - - - - - - - - - - - - - - - -->
-<div class="sidebyside-image">
-<video muted loop playsinline webkit-playsinline class="gifloops fx-thinbord" width="540">
-<source src="https://3dart.charlierenwick.com/assets/images/peacock_tail_rig.mp4" type="video/mp4"/>
-</video>
-</div>
-    <!-- - - - - - - - - - - - - - - - - - - -->
+<!--<br><br><br>-->
+<!-- spacer -->
+<div style="width:10px;margin:0px;margin-bottom:50px;"></div>
+
+
+
+
+
+
+
+
+
+    
+
 
     
     
     
 
 <!-- - - - - - - - - - - - - - - - - - - -->
+<!--
 <div class="sidebyside-textbox">
 
     <br><br>
@@ -1016,18 +945,17 @@ rigging
     It resulted in a tidy four controls for the billowing, flexing and rotation of all the feathers cohesively, making for streamlined work when animating it.
     <div style="height:40px;width:10px;"></div>
     
-    <div align=center><img src="https://3dart.charlierenwick.com/assets/images/peacock_deco_concepts_colour.png" style="
+    <div align=center><img src="../assets/images/peacock_deco_concepts_colour.png" style="
         padding:0px;
         ">
     </div>
 </div>
+-->
 <!-- - - - - - - - - - - - - - - - - - - -->
     
-
-<!-- - - - - - - - - - - - - - - - - - - -->
-<!--    END PEACOCK TAIL      -->
-<!--  ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ ▲ -->
-  
+    
+    
+    
     
     
 <!-- / / / / / / / / / / / / / / / / / / /  -->
@@ -1098,9 +1026,9 @@ rigging
 <!--    SHADERS -->
 <!-- - - - - - - - - - - - - - - - - - - -->
 <!--
- <div class="button-div"><a href="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/techart_shaders.html">
+ <div class="button-div"><a href="https://creatureframe.github.io/../assets/tech/techart_shaders.html">
 <video muted loop playsinline webkit-playsinline class='index-vidbutton-tempcancel' onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-<source src="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/images/button_270px_daytimeshader_b_x2_500k.mp4" type="video/mp4"/>
+<source src="https://creatureframe.github.io/../assets/tech/images/button_270px_daytimeshader_b_x2_500k.mp4" type="video/mp4"/>
 </video>
 <div class="frontbutton-text-xs">
     shaders
@@ -1115,7 +1043,7 @@ rigging
 <!--
  <div class="button-div"><a href="https://charlierenwick.com/techart_tools">
 <video muted loop playsinline webkit-playsinline class='index-vidbutton-tempcancel' onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
-<source src="https://creatureframe.github.io/https://3dart.charlierenwick.com/assets/tech/images/button_270px_WS_tomi_c_x2_500k.mp4" type="video/mp4"/>
+<source src="https://creatureframe.github.io/../assets/tech/images/button_270px_WS_tomi_c_x2_500k.mp4" type="video/mp4"/>
 </video>
 <div class="frontbutton-text-xs">
     tools
@@ -1139,15 +1067,11 @@ rigging
 
 
 
-    
-    
-    
+ 
     
 
     
-<!--<hr class='hr-acrossfull' style='margin-top:10px;margin-bottom:60px;border:none;border-bottom: 3px solid gold;'> -->
-       
-    
+<!--
 <style>
 .divhr-thickgold {
     background:#ffc800;
@@ -1157,10 +1081,14 @@ rigging
     border:5px solid #ffe196;
 }    
 </style>
+-->
 
 <div class='divhr-thickgold' style=''></div>
 
 
+    
+    
+    
     
     
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
@@ -1170,7 +1098,7 @@ rigging
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <!-- alpaca face rig -->
 <div class="sidebyside-image fx-photoborder" style="padding:15px; margin:3px;">
-<img src="https://64.media.tumblr.com/f9970d4ce1efad694264821beab1b443/54887cd8627ce25b-d8/s500x750/b956d9c964b75e218aee185da25f6a5196a20a7b.gifv" style="border:1px solid #eee; margin:0px 0px -5px 0px;background: fixed url(https://3dart.charlierenwick.com/assets/deco/bg03.jpg) bottom center;">
+<img src="https://64.media.tumblr.com/f9970d4ce1efad694264821beab1b443/54887cd8627ce25b-d8/s500x750/b956d9c964b75e218aee185da25f6a5196a20a7b.gifv" style="border:1px solid #eee; margin:0px 0px -5px 0px;background: fixed url(../assets/deco/bg03.jpg) bottom center;height:auto;" width="500" height="500">
 </div>
     
     
@@ -1229,7 +1157,7 @@ tech art folio
     
     
    
-
+<!-- - - - - - - - - - - - - - - - - - - -->
 <!-- END OF PAGE BLOCKS -->
 </div>
 <!-- end <div class="minifolio-textboxes"> -->
@@ -1239,7 +1167,7 @@ tech art folio
 </div>
 <!-- end <div class='part'> -->
 <!-- end : END OF PAGE BLOCKS -->
-
+<!-- - - - - - - - - - - - - - - - - - - -->
 
 
 
@@ -1302,7 +1230,7 @@ tech art folio
 <td valign="top">Software:</td>
 <td width="10"></td><td>
     Autodesk Maya, Unity3D, Blender, ZBrush, Adobe suite, 3D-Coat, Substance
-<img src="https://3dart.charlierenwick.com/assets/deco/softwareicons_row_2.png" class="resumemini-img" style="margin:10px 0px;">
+<img src="../assets/deco/softwareicons_row_2.png" class="resumemini-img" style="margin:10px 0px;">
 </td>
 </tr><tr>
 <td valign="top">Skills:</td>
@@ -1324,10 +1252,8 @@ tech art folio
 <!-- ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ ▼ -->
 <!-- FOOTER MESSAGE AND BACKURL -->
 <div style="width:10px;margin-bottom: 60px;"></div>
-
 <div align="center">
 <div class="sidebyside-textbox textbox-border" style="max-width:450px;margin:0px 5px -10px 5px;padding:10px 20px;position:relative;">
-    <!-- padding:10px 20px; -->
 <br>
 
 <!-- Responsible for all aspects of each piece (design, modelling, retopologising, texturing, rigging, animation, shaders, etc.), except where otherwise specified.
@@ -1357,13 +1283,9 @@ email me here!
 <!--for space after "thanks" and mini resume footer -->
 <!--spacer-->
 <div style="width:10px;margin:55px 0px 0px 0px;"></div> 
-
-
-
 </section> 
 </div></div>
 <div style="width:10px;margin:-45px 0px 0px 0px;"></div> 
-
 <!-- end divs content and content-spacing -->
 </body>
 </html>
