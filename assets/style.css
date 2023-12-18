@@ -15,6 +15,10 @@ body {
     line-height: 1.4em;
     letter-spacing: 0.065em;
     font-weight:400;
+/*    border: 2px solid red;*/
+/*    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;*/
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px inset,  rgba(0, 0, 0, 0.25) 0px 3px 13px 3px inset;
+    padding-bottom: 30px;
 }
 
 
@@ -1665,6 +1669,8 @@ body.night .minifolio-altbg {
     border:5px solid #ffe196;
 }  
 /* - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+/*
 .pigeons-flex-container {
   display: flex;
   flex-direction: row;
@@ -1674,16 +1680,19 @@ body.night .minifolio-altbg {
   align-content: normal;
     background: #fff;
 }
+*/
 
 /*.flex-items:nth-child(1) {*/
+/*
 .pigeons-flex-items {
   display: block;
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: auto;
   align-self: auto;
-/*  order: 0;*/
 }
+*/
+/*
 .flex-items:nth-child(1) {
   order: 0;
 }
@@ -1696,6 +1705,7 @@ body.night .minifolio-altbg {
 .flex-items:nth-child(4) {
   order: 3;
 }
+*/
 /* - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
